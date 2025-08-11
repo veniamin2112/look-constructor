@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис проверки сочетаемости одежды</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            background-color: #fafafa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #ff4081, #7c4dff);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 2em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .visual {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .visual img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .problem, .solution {
+            margin: 40px 0;
+        }
+        h2 {
+            color: #7c4dff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li::before {
+            content: "✔";
+            color: #ff4081;
+            margin-right: 8px;
+        }
+        .cta {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .cta a {
+            display: inline-block;
+            background: #ff4081;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            transition: background 0.3s;
+        }
+        .cta a:hover {
+            background: #e73370;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Проверяйте, подойдёт ли вещь из маркетплейса к вашему гардеробу — до покупки</h1>
+        <p>Сервис, который за секунды покажет, сочетается ли выбранная одежда с тем, что у вас уже есть</p>
+    </header>
+    <main>
+        <section class="visual">
+            <img src="https://via.placeholder.com/200x250.png?text=Вещь+из+маркетплейса" alt="Вещь с маркетплейса">
+            <span style="font-size:2em;">➡️</span>
+            <img src="https://via.placeholder.com/200x250.png?text=Ваша+вещь" alt="Вещь из гардероба">
+            <span style="font-size:2em;">✅</span>
+        </section>
+        <section class="problem">
+            <h2>Как часто бывает так:</h2>
+            <ul>
+                <li>Купили онлайн — цвет не подошёл</li>
+                <li>Вещь красиво смотрелась на фото, но не “дружит” с вашим стилем</li>
+                <li>Купили на всякий случай — и она так и лежит в шкафу</li>
+            </ul>
+        </section>
+        <section class="solution">
+            <h2>Как работает сервис:</h2>
+            <ul>
+                <li>Вы находите вещь на маркетплейсе</li>
+                <li>Загружаете фото своей одежды</li>
+                <li>Сервис показывает, подойдут ли они друг к другу</li>
+            </ul>
+        </section>
+        <section class="cta">
+            <p><strong>Сейчас мы собираем мнения покупателей маркетплейсов, чтобы сделать сервис максимально удобным.</strong></p>
+            <a href="https://forms.gle/your-form-link" target="_blank">Пройти опрос</a>
+        </section>
+    </main>
+    <footer>
+        <p>Проект в разработке | Связаться: youremail@example.com</p>
+    </footer>
+</body>
+</html>
